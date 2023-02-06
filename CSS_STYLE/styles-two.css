@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Roboto:wght@500&display=swap');
+/*- GOOLE_FONT */
+
+/*----------------------------------------------
+----------------COMMON UTILITIES-------------------
+------------------------------------------------*/
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*----------------------------------------------
+----------------ANIMATION SIDE-------------------
+------------------------------------------------*/
+
+@keyframes marcelo-pic {
+
+    from {
+        transform: scale(1);
+        transform-origin: bottom;
+    }
+
+    to {
+        transform: scale(.96);
+        transform-origin: bottom;
+    }
+
+}
+
+/*----------------------------------------------
+----------------FIRST SECTION-------------------
+------------------------------------------------*/
+
+.first-section {
+    display: flex;
+    justify-content: center;
+}
+
+.baner {
+    width: 1321px;
+    border: 2px solid blue;
+    background-color: #161616;
+    border-radius: 20px;
+    height: 627px;
+}
+
+.marcelo {
+    display: flex;
+}
+
+.first-title {
+    padding: 20px;
+    position: relative;
+    right: -76px;
+    margin-bottom: 15px;
+}
+
+.title-name {
+    font-size: 70px;
+    color: whitesmoke;
+}
+
+#show {
+    display: none;
+}
+
+.first-title-info {
+    font-weight: 500;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.fooball {
+    display: none;
+}
+
+.marcelo-pic {
+    padding: 10px;
+}
+
+.marcelo-pic img {
+    width: 581px;
+    height: 616px;
+    animation: marcelo-pic 1s ease-in 1s infinite alternate;
+    animation-play-state: running;
+    margin-left: 172px;
+
+}
+
+
+.watch-live {
+    background-color: #DD0000;
+    color: whitesmoke;
+    font-size: 22px;
+    width: 180px;
+    height: 56px;
+    border-radius: 8px;
+    margin-top: 38px;
+    cursor: pointer;
+}
+
+.fa-greater-than {
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+/*----------------------------------------------
+----------------SECOND SECTION-------------------
+------------------------------------------------*/
+
+.second-section {
+    display: flex;
+    margin-top: 161px;
+    justify-content: space-evenly;
+    height: 1163px;
+}
+
+.container {
+    margin-right: 26px;
+}
+
+.match-item {
+    height: 249px;
+    width: 278px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    padding: 2px;
+    background-color: #161616;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 15px;
+
+}
+
+.item-button {
+    width: 252px;
+    height: 65px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#group {
+    background-color: #DD0000;
+    color: whitesmoke;
+}
+
+/*----------------------------FOR CHANGE PART-----------------*/
+
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 26px;
+    row-gap: 21px;
+}
+
+
+.article {
+    border: 2px solid rgba(0, 0, 0, 0.14);
+    width: 312px;
+    height: 362px;
+    border-radius: 12px;
+}
+
+.blog-tr {
+    padding: 15px;
+}
+
+
+.transfer {
+    border: 2px solid black;
+    width: 100px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.blog-icon {
+    display: flex;
+    align-items: center;
+    column-gap: 77px;
+    margin-top: -27px;
+}
+
+.blog-time {
+    display: flex;
+    align-items: center;
+    color: #16161694;
+    column-gap: 7px;
+}
+
+.blog-comment {
+    display: flex;
+    align-items: center;
+    color: #16161693;
+    column-gap: 7px;
+}
+
+.view-all {
+    background-color: #DD0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 131px;
+    height: 47px;
+    margin-top: 40px;
+    border-radius: 10px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.view {
+    font-size: 20px;
+}
+
+.fa-arrow-right {
+    margin-left: 10px;
+    color: whitesmoke;
+}
+
+.tab {
+    display: none;
+}
+
+/*----------------------------------------------
+----------------FOOTER PARTS-------------------
+------------------------------------------------*/
+footer {
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    height: 242px;
+    width: 1519px;
+    margin-top: 51px;
+    align-items: center;
+    background-color: #161616;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goal {
+    font-size: 35px;
+    color: whitesmoke;
+    width: 80px;
+}
+
+.icon {
+    margin-top: -19px;
+}
+
+.icon a {
+    font-size: 25px;
+    text-decoration: none;
+    margin: 9px;
+    color: whitesmoke;
+}
+
+#a-br {
+    display: none;
+}
+
+#term-br {
+    display: none;
+}
+
+.term-service a {
+    margin: 15px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/*---------------------FOR MOBILE DEVISE----------------- */
+
+@media screen and (max-width:685px) {
+
+    /*----------------------FIRST SECTION------------------*/
+
+    .marcelo {
+        flex-direction: column;
+    }
+
+    .baner {
+        width: 344px;
+        height: 498px;
+    }
+
+    .title-name {
+        font-size: 22px;
+        margin-left: -10px;
+    }
+
+    .mobile {
+        margin-left: 34px;
+    }
+
+    #great {
+        display: none;
+    }
+
+    #show {
+        display: block;
+    }
+
+    .first-title-info {
+        display: none;
+    }
+
+    .fooball {
+        color: whitesmoke;
+        display: block;
+        margin-left: -18px;
+    }
+
+    .first-title-info {
+        font-weight: 100;
+        font-size: 14px;
+    }
+
+    .games {
+        margin-left: 32px;
+    }
+
+    .watch-live {
+        font-size: 14px;
+        width: 161px;
+        height: 40px;
+        margin-top: 6px;
+    }
+
+    .fa-greater-than {
+        font-size: 12px;
+    }
+
+    .marcelo-pic img {
+        margin-left: 69px;
+    }
+
+    .marcelo-pic img {
+        width: 233px;
+        height: 245px;
+    }
+
+    /*---------------------------------SECOND SECTION----------------------*/
+
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        height: 3759px;
+        width: 316px;
+    }
+
+    /*----------------------------CONTAINER PART----------------*/
+
+    .container {
+        height: 256px;
+        width: 285px;
+    }
+
+    .container-2 {
+        margin-top: 112px;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 15px;
+        width: 313px;
+    }
+
+    .match-item {
+        height: 249px;
+        width: 278px;
+        display: flex;
+        border-radius: 15px;
+        justify-content: center;
+        padding: 2px;
+        background-color: white;
+    }
+
+    /*-------------------------FOOTER PART------------------------------*/
+    footer {
+        height: 541px;
+        margin-top: 25px;
+        width: 455px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .goal {
+        font-size: 22px;
+    }
+
+    .icon {
+        height: 70px;
+        width: 120px;
+        display: grid;
+        margin-top: 15px;
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+        justify-items: center;
+        position: relative;
+        right: 15px;
+    }
+
+    .icon a {
+        font-size: 18px;
+        margin-top: 29px;
+    }
+
+    #a-br {
+        display: block;
+    }
+
+    .term-service {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        align-items: center;
+        margin-left: -23px;
+    }
+
+    .term-service a {
+        font-size: 13px;
+    }
+
+    .term-s {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/*----------------------------------FOR TABLET---------------------------*/
+
+@media screen and (min-width: 686px) and (max-width:980px) {
+
+
+    /*-------------------------------FIRST SECTION----------------------*/
+
+    .baner {
+        width: 773px;
+        height: 493px;
+    }
+
+    .marcelo-pic {
+        position: relative;
+        bottom: -144px;
+    }
+
+    .marcelo-pic img {
+        width: 324px;
+        height: 340px;
+    }
+
+    .title-name {
+        font-size: 40px;
+    }
+
+    .first-title-info {
+        display: none;
+    }
+
+    .fooball {
+        display: block;
+        color: whitesmoke;
+    }
+
+    .watch-live {
+        font-size: 20px;
+        width: 150px;
+        height: 48px;
+        margin-top: 26px;
+    }
+
+    /*-----------------------------SECOND SECTION------------------------------*/
+
+    .second-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        height: 1644px;
+        width: 656px;
+    }
+
+    .link {
+        flex-direction: row;
+        margin-top: 15px;
+        justify-content: space-between;
+        column-gap: 113px;
+    }
+
+    .container {
+        width: 654px;
+        height: 89px;
+        position: relative;
+        top: -5px;
+    }
+
+    .match-item {
+        width: 652px;
+        height: 89px;
+        background-color: white;
+    }
+
+    .item-button {
+        width: 144px;
+        font-size: 17px;
+        border: none;
+    }
+
+
+    .container-2 {
+        margin-top: 112px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15px;
+        width: 654px;
+        position: relative;
+        top: 2px;
+    }
+
+    #last-article {
+        display: none;
+    }
+
+    .tab {
+        display: block;
+    }
+
+
+    /*------------------------------FOOTER PART---------------------------*/
+
+    footer {
+        height: 410px;
+        margin-top: 78px;
+        width: 680px;
+    }
+
+    .term-service {
+        margin: 20px;
+    }
+
+    #term-br {
+        display: block;
+    }
+
+    .term-s {
+        position: relative;
+        left: 160px;
+        top: 36px;
+    }
+
+}
